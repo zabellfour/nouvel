@@ -1,0 +1,82 @@
+.descr-section {
+    text-align: center;
+    padding: 70px 0 13px;
+    .h1 {
+        font-size: 76px;
+        margin-bottom: 32px;
+        color: $black;
+        font-weight: 600;
+        @include media('<widescreen') {
+          font-size: 60px;
+          margin-bottom: 20px;
+        }
+        @include media('<desktop') {
+          font-size: 50px;
+          margin-bottom: 15px;
+        }
+        @include media('<tablet') {
+          font-size: 40px;
+        }
+        @include media('<phone') {
+          font-size: 30px;
+        }
+    }
+    .info-text {
+        font-size: 26px;
+        max-width: 720px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        @include media('<widescreen') {
+          font-size: 24px;
+          margin-bottom: 30px;
+        }
+        @include media('<desktop') {
+          font-size: 22px;
+          margin-bottom: 15px;
+        }
+        @include media('<tablet') {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        @include media('<phone') {
+          font-size: 16px;
+
+        }
+        strong {
+            color: $black;
+        }
+        &--separated {
+            padding-bottom: 86px;
+            position: relative;
+            margin-bottom: 95px;
+            @include media('<widescreen') {
+              padding-bottom: 70px;
+              margin-bottom: 70px;
+            }
+            @include media('<desktop') {
+              padding-bottom: 50px;
+              margin-bottom: 50px;
+            }
+            @include media('<tablet') {
+              padding-bottom: 40px;
+              margin-bottom: 40px;
+            }
+            @include media('<phone') {
+              padding-bottom: 20px;
+              margin-bottom: 20px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: $grey-light;
+                height: 1px;
+                width: 100%;
+                max-width: 46px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

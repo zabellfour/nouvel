@@ -1,0 +1,54 @@
+$white: #fff;
+$dark: #555;
+$body-bg:#fafafa;
+$body-color:$dark;
+$blck: #000;
+$grey-light: #a5a5a5;
+
+// Fonts
+$font-family-sans-serif:          'SF UI Display', "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+$font-family-base:                $font-family-sans-serif;
+$font-size-base:                  1.25rem;
+$font-weight-bold:                600;
+$line-height-base:                1.4;
+$h1-font-size:                    60px;
+$h2-font-size:                    54px;
+$h3-font-size:                    48px;
+$h4-font-size:                    36px;
+$h5-font-size:                    26px;
+$h6-font-size:                    20px;
+$blue:                          #1990f9;
+
+$navbar-padding-y:11px;
+$navbar-padding-x:0px;
+$navbar-nav-link-padding-x: 24px;
+$navbar-nav-link-padding-y: 0px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1030px
+) ;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1050px
+) ;
+
+$navbar-toggler-padding-y:          6px;
+$navbar-toggler-padding-x:         6px;
+$navbar-toggler-font-size:         15px;
+$navbar-toggler-border-radius:  20%;
+
+$btn-padding-y-lg: 25px;
+$btn-padding-x-lg:50px;
+$btn-line-height-lg :30px;
+$btn-padding-y-sm: 10px;
+$btn-padding-x-sm: 20px;
+
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

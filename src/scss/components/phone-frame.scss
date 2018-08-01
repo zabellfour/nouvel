@@ -1,0 +1,39 @@
+.phone-frame {
+    padding-bottom: 203%;
+    background-image: url('../images/phone.png');
+    margin-bottom: 50px;
+    background-size: 100%;
+    z-index: 1;
+    position: relative;
+    .abs-image {
+        z-index: 3;
+        position: absolute;
+        top: 12.1%;
+        left: 6%;
+        right: 6%;
+        width: 88%;
+    }
+}
+
+.featured-images {
+    padding: 54px 0;
+    @include media('<widescreen') {
+        padding: 40px 0;
+    }
+    @include media('<desktop') {
+        padding: 20px 0;
+    }
+  }
+      .shadow-wrapper {
+          position: relative;
+      }
+      .shadow-wrapper:before {
+          content: '';
+          box-shadow: 30px 50px 70px 0px rgba(0, 0, 0, 0.15);
+          position: absolute;
+          top: 3%;
+          left: 8%;
+          right: 8%;
+          bottom: 3%;
+          z-index: 1;
+      }
