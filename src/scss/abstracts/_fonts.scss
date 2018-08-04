@@ -14,3 +14,11 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'SF UI Display';
+  src: url('../fonts/SFUIDisplay-Bold.woff2') format('woff2'),
+      url('../fonts/SFUIDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+

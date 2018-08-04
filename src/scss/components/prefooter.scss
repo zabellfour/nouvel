@@ -1,0 +1,110 @@
+.prefooter-section {
+    padding: 156px 0 92px;
+    font-size: 26px;
+    @include media('<widescreen') {
+      padding: 130px 0 100px;
+    }
+    @include media('<desktop') {
+      padding: 100px 0;
+    }
+    @include media('<tablet') {
+      padding: 80px 0;
+    }
+    @include media('<phone') {
+      padding: 60px 0;
+    }
+    h1.h1 {
+        font-size: 72px;
+        color: $black;
+        margin-bottom: 25px;
+        font-weight: 400;text-align: center;
+        @include media('<widescreen') {
+          font-size: 60px;
+        }
+        @include media('<desktop') {
+          font-size: 50px;
+          margin-bottom: 20px;
+        }
+        @include media('<tablet') {
+          font-size: 30px;
+          margin-bottom: 15px;
+        }
+        @include media('<phone') {
+          font-size: 26px;
+        }
+    }
+    .headline {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    ul {
+        padding-left: 45px;
+        margin-bottom: 120px;
+        @include media('<widescreen') {
+          margin-bottom: 100px;
+        }
+        @include media('<desktop') {
+          padding-left: 20px;
+          margin-bottom: 80px;
+          font-size: 20px;
+        }
+        @include media('<tablet') {
+          margin-bottom: 40px;
+          font-size: 18px;
+        }
+        @include media('<phone') {
+          margin-bottom: 30px;
+          font-size: 16px;
+        }
+    }
+    .btn-row {
+        text-align: center;
+        margin-bottom: 148px;
+        @include media('<widescreen') {
+          margin-bottom: 120px;
+        }
+        @include media('<desktop') {
+          margin-bottom: 100px;
+        }
+        @include media('<tablet') {
+          margin-bottom: 80px;
+        }
+        @include media('<phone') {
+          margin-bottom: 40px;
+        }
+
+    }
+    .logo-holder {
+        max-width: 240px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        @include media('<desktop') {
+          margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            ;
+            vertical-align: top;
+        }
+    }
+    .conclusion {
+        font-size: 26px;
+        text-align: center;
+        margin: 40px;
+        @include media('<widescreen') {
+          font-size: 24px;
+        }
+        @include media('<desktop') {
+          font-size: 20px;
+        }
+        @include media('<tablet') {
+          font-size: 18px;
+        }
+        @include media('<phone') {
+          font-size: 15px;
+        }
+        strong {
+            color: $black;
+        }
+    }
+}
