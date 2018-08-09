@@ -3,19 +3,19 @@
     font-size: 22px;
     @include media('<widescreen') {
         font-size: 18px;
-      padding: 100px 0 60px;
+      padding: 110px 0 60px;
     }
     @include media('<desktop') {
-        font-size: 17px;
-        padding: 80px 0 50px;
+        font-size: 18px;
+        padding: 100px 0 50px;
     }
     @include media('<tablet') {
-        font-size: 15px;
-        padding: 50px 0 30px;
+        font-size: 17px;
+        padding: 90px 0 30px;
     }
     @include media('<phone') {
-        font-size: 13px;
-        padding: 40px 0 20px;
+        font-size: 17px;
+        padding: 70px 0 20px;
     }
     .section-headline {
         font-size: 26px;
@@ -33,7 +33,7 @@
             margin-bottom: 60px
         }
         @include media('<phone') {
-            font-size: 15px;
+            font-size: 17px;
             margin-bottom: 55px
         }
         .h1 {
@@ -69,7 +69,10 @@
         letter-spacing: -0.5px;
         word-spacing: 2px;
         @include media('<tablet') {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
+        }
+        @include media('<phone') {
+            margin-bottom: 60px;
         }
         ul {
             padding-left: 24px;

@@ -5,6 +5,12 @@
     background-size: 100%;
     z-index: 1;
     position: relative;
+    @include media('<tablet') {
+        margin-bottom: 60px;
+    }
+    @include media('<phone') {
+        margin-bottom: 50px;
+    }
     .abs-image {
         z-index: 3;
         position: absolute;

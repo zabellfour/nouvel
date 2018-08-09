@@ -1,0 +1,222 @@
+.modal {
+    .modal-header {
+        text-transform: uppercase;
+        color: $white;
+        background-color: $dark;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 0;
+        .modal-title {
+            font-size: 18px;
+            display: block;
+        }
+        .close {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-1px);
+            box-sizing: border-box;
+            padding: 0;
+            color: $white;
+            font-weight: 200;
+            opacity: .2;
+            @include animate(opacity);
+            &:hover {
+                opacity: .8;
+                color: $white;
+            }
+        }
+    }
+}
+
+.inputs-hidden {
+    opacity: 0;
+}
+
+.form-send-result {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    .send {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #59d76b;
+        z-index: 10;
+        flex-direction: column;
+        &:before {
+            content: '';
+            width: 100px;
+            height: 100px;
+            margin-bottom: 80px;
+            display: block;
+            background-size: 100% 100%;
+            background-image: url('data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8cGF0aCBzdHlsZT0iZmlsbDojQjhCRkNDOyIgZD0iTTQuMzkzLDQ2NC45NzhjLTUuODU4LTUuODU4LTUuODU4LTE1LjM0OSwwLTIxLjIwN2w5Mi4zMDItOTEuODg3ICAgYzUuODU4LTUuODU4LDE1LjM0OS01Ljg1OCwyMS4yMDcsMGM1Ljg1OCw1Ljg1OCw1Ljg1OCwxNS4zNDksMCwyMS4yMDdMMjUuNiw0NjQuOTc4QzE5Ljc0MSw0NzAuODM2LDEwLjI1MSw0NzAuODM2LDQuMzkzLDQ2NC45Nzh6ICAgIi8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojQjhCRkNDOyIgZD0iTTQuMzkzLDM4MC4xNWMtNS44NTgtNS44NTgtNS44NTgtMTUuMzQ5LDAtMjEuMjA3bDQ5Ljg4OC00OS40ODhjNS44NTgtNS44NTgsMTUuMzQ5LTUuODU4LDIxLjIwNywwICAgYzUuODU4LDUuODU4LDUuODU4LDE1LjM0OSwwLDIxLjIwN0wyNS42LDM4MC4xNUMxOS43NDEsMzg2LjAwOSwxMC4yNTEsMzg2LjAwOSw0LjM5MywzODAuMTV6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojQjhCRkNDOyIgZD0iTTQ2LjgyMSw1MDcuNDA1Yy01Ljg1OC01Ljg1OC01Ljg1OC0xNS4zNDksMC0yMS4yMDdsOTIuMjg3LTkxLjkwMiAgIGM1Ljg1OC01Ljg1OCwxNS4zNDktNS44NTgsMjEuMjA3LDBjNS44NTgsNS44NTgsNS44NTgsMTUuMzQ5LDAsMjEuMjA3bC05Mi4yODcsOTEuOTAyICAgQzYyLjE2OSw1MTMuMjY0LDUyLjY4LDUxMy4yNjQsNDYuODIxLDUwNy40MDV6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojQjhCRkNDOyIgZD0iTTEzMS42NDksNTA3LjQwNWMtNS44NTgtNS44NTgtNS44NTgtMTUuMzQ5LDAtMjEuMjA3bDQ5Ljg4OC00OS40ODggICBjNS44NTgtNS44NTgsMTUuMzQ5LTUuODU4LDIxLjIwNywwYzUuODU4LDUuODU4LDUuODU4LDE1LjM0OSwwLDIxLjIwN2wtNDkuODg4LDQ5LjQ4OCAgIEMxNDYuOTk3LDUxMy4yNjQsMTM3LjUwNiw1MTMuMjY0LDEzMS42NDksNTA3LjQwNXoiLz4KPC9nPgo8cGF0aCBzdHlsZT0iZmlsbDojRDJEQUU5OyIgZD0iTTIzOS45NTIsNDI2LjE2Yy02LjE1Mi0yLjMzMy0xMS44NzktNS41MTUtMTYuNzU2LTEwLjM5Mkw5NS45NDMsMjg4LjUxMyAgYy00Ljg3OC00Ljg3OC04LjA1OS0xMC42MDUtMTAuMzkyLTE2Ljc1Nmw3LjIxMi0yMS4yMDhsMTc3LjMwNy0yMS4yMDlsLTEuNjk3LDEzLjk5N0wyNDguODU5LDQwNC45NUwyMzkuOTUyLDQyNi4xNnoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0M3Q0VERDsiIGQ9Ik01MDkuMzA4LDE1Ni45MDVsLTIxLjIxLDguOTA3bC0xMzMuMTkyLDIxLjExMWwtMzAuMTE4LTMwLjAxOEwzMjUsNDUuMDMzbDI5LjY5My00Mi40MTggIGM2LjM2MywyLjEyMiwxMi4wOSw1LjMwNCwxNi45NjcsMTAuMTgxTDQ5OC45MTQsMTQwLjA1QzUwMy43OTIsMTQ0LjkyNyw1MDYuOTc0LDE1MC43NTQsNTA5LjMwOCwxNTYuOTA1eiIvPgo8cGF0aCBzdHlsZT0iZmlsbDojREFFMkYyOyIgZD0iTTUwOS4zNjMsMTU2Ljk1OWMtNjguMzQzLTAuMDAxLTExMS44LDAtMTg0LjUxNSwwTDI0MC4wMDksMjQxLjdjMCwxOS42NTMtMC4wMDEtNy45MDItMC4wMDEsMTg0LjUxNCAgYzE3LjgwMiw2LjMwNywzNS43NDUsMC42MjgsNDYuODA3LTEwLjQ1MmwyMTIuMDk3LTIxMi4wODJDNTA5Ljk4MywxOTIuNjA5LDUxNS43MDIsMTc0Ljg1LDUwOS4zNjMsMTU2Ljk1OXoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0U2RUVGRjsiIGQ9Ik0yODYuODE0LDQxNS43NjJsMTA2LjA1LTEwNi4wNDVMMjgyLjQyOCwxOTkuMjgxbC00Mi40MTksNDIuNDE5YzAsMTkuNjUyLTAuMDAyLTcuOTAzLTAuMDAyLDE4NC41MTQgIEMyNTcuODA5LDQzMi41MiwyNzUuNzUxLDQyNi44NDEsMjg2LjgxNCw0MTUuNzYyeiIvPgo8cGF0aCBzdHlsZT0iZmlsbDojQTY4MEZGOyIgZD0iTTMwOS45NDMsMjcxLjc1OGMtMjQuMTc4LDAtNDcuMDg1LTAuMDAxLTY5Ljk4OS0wLjAwMUg4NS41NSAgYy02LjM2My0xNy44MTctMC44NDgtMzUuNjMxLDEwLjM5Mi00Ni44NzFMMzA4LjAzMywxMi43OTZjMTEuMDI5LTExLjAyOSwyOS45MDUtMTUuOTA3LDQ2LjY2LTEwLjE4MXYxNTQuNTAzICBjMC4yMTIsMjQuMzkxLDAsMTMuODk4LDAuMjEyLDY5LjY3OEMzNTQuOTA1LDI1MS4zOTYsMzM0LjU0NCwyNzEuNzU3LDMwOS45NDMsMjcxLjc1OHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0I5OTlGRjsiIGQ9Ik0zMDkuOTQyLDI3MS43NTdjMTIuMzAzLDAsMjMuNTQxLTUuMDg5LDMxLjcwOC0xMy4yNTZMMjAxLjk4NywxMTguODM5TDk1Ljk0MywyMjQuODg3ICBjLTExLjI0MSwxMS4yMzktMTYuNzU1LDI5LjA1NS0xMC4zOTMsNDYuODcyaDE1NC40MDNDMjYyLjg1OCwyNzEuNzU3LDI4NS43NjMsMjcxLjc1NywzMDkuOTQyLDI3MS43NTd6Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=');
+        }
+    }
+    .error {
+        z-index: 10;
+        position: absolute;
+        color: red;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.input-wrapper {
+    position: relative;
+    input+.message,
+    option+.message,
+    textarea+.message,
+    select+.message {
+      
+        position: absolute;
+        z-index: 10;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e56583;
+        padding: 8px;
+        color: $white;
+        max-width: 1000px;
+        visibility:hidden;
+        opacity: 0;
+        position: absolute;
+        right: -5px;
+        border-radius: 5px;
+        top: -18px;
+        font-size: 12px;
+        @include animate(visibility opacity);
+        pointer-events: none;
+    }
+}
+
+.was-validated .input-wrapper {
+    position: relative;
+    input+.message,
+    option+.message,
+    textarea+.message,
+    select+.message {
+        visibility:visible;
+        opacity: 1;
+        &:after {
+            z-index: 10;
+            content: '';
+            @include triangle(12px,
+            #e56583,
+            down);
+            position: absolute;
+            bottom: -6px;
+            left: 15px;
+        }
+    }
+    input:valid+.message,
+    option:valid+.message,
+    textarea:valid+.message,
+    select:valid+.message {
+        display: none;
+    }
+}
+
+.modal-dialog {
+    max-width: 550px;
+    .modal-content {
+        border-radius: 0;
+        border: none;
+    }
+    .modal-body {
+        padding: 30px 40px 0;
+        max-height: 75vh;
+        overflow: auto;
+    }
+    .form-row {
+        margin-bottom: 0px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .modal-footer {
+        border: none;
+        justify-content: center;
+        padding-bottom: 35px;
+        .btn {
+            font-size: 15px;
+        }
+    }
+}
+
+.incription-form {
+    input,
+    textarea,
+    select {
+        color: #666;
+        border: none;
+        font-size: 15px;
+        padding: 10px 20px;
+        @include placeholder {
+            color: #666;
+        }
+        background-color: #e3e8ee;
+        border-radius: 4px;
+    }
+    .form-control:focus {
+        box-shadow: 0 0 0 1px rgba(0, 122, 255, 0.25);
+    }
+    textarea {
+        height: 120px;
+        resize: none;
+    }
+    .popover-box {
+        background-color: #e56583;
+        padding: 8px;
+        color: $white;
+        max-width: 1000px;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        right: -5px;
+        border-radius: 5px;
+        top: -18px;
+        font-size: 12px;
+        @include animate(visibility opacity);
+        pointer-events: none;
+        &:after {
+            z-index: 10;
+            content: '';
+            @include triangle(12px,
+            #e56583,
+            down);
+            position: absolute;
+            bottom: -6px;
+            left: 15px;
+        }
+    }
+    .input-wrapper {
+        margin-bottom: 17px;
+        &:hover .popover-box {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+.modal-open{
+    position: fixed;
+}

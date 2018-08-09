@@ -16,5 +16,6 @@
   @include media('<phone') {
     font-size: 14px;
     padding: 8px 5px;
+    width: 100%;
   }
 }
