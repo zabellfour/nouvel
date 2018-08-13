@@ -86,7 +86,6 @@
     option+.message,
     textarea+.message,
     select+.message {
-      
         position: absolute;
         z-index: 10;
         background-color: $white;
@@ -97,7 +96,7 @@
         padding: 8px;
         color: $white;
         max-width: 1000px;
-        visibility:hidden;
+        visibility: hidden;
         opacity: 0;
         position: absolute;
         right: -5px;
@@ -115,7 +114,7 @@
     option+.message,
     textarea+.message,
     select+.message {
-        visibility:visible;
+        visibility: visible;
         opacity: 1;
         &:after {
             z-index: 10;
@@ -217,6 +216,15 @@
         }
     }
 }
-.modal-open{
+
+.modal {
+  
+}
+
+.modal-backdrop {}
+
+body.iosBugFixCaret.modal-open {
     position: fixed;
+    width: 100%;
+    overflow: auto;
 }
